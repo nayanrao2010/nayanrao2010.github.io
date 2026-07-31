@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nayan Rao</title>
+    <title>My Awesome Website</title>
     <!-- Link to our external CSS file for styling -->
     <link rel="stylesheet" href="style.css">
 </head>
@@ -11,18 +11,38 @@
 
     <!-- Main header section -->
     <header>
-        <h1>Welcome to My Website!</h1>
-        <p>Built with HTML, CSS, and JavaScript, hosted on GitHub Pages.</p>
+        <h1>Game Day & Concert HQ</h1>
+        <p>Welcome to my sports and music arena!</p>
     </header>
 
-    <!-- Main interactive content section -->
+    <!-- Main interactive content section with tabs -->
     <main>
-        <section class="card">
-            <h2>Interactive Area</h2>
-            <p>Click the button below to see JavaScript in action!</p>
-            <!-- A button that triggers a JavaScript function when clicked -->
-            <button id="colorBtn">Click Me!</button>
-        </section>
+        <div class="card">
+            <!-- Tab Navigation Buttons -->
+            <div class="tab-container">
+                <button class="tab-btn active" onclick="openTab(event, 'sports')">Sports</button>
+                <button class="tab-btn" onclick="openTab(event, 'music')">Music</button>
+                <button class="tab-btn" onclick="openTab(event, 'about')">About</button>
+            </div>
+
+            <!-- Tab Content: Sports -->
+            <div id="sports" class="tab-content active-content">
+                <h2>Sports Arena</h2>
+                <p>Catch the latest highlights, live scores, and game schedules right here!</p>
+            </div>
+
+            <!-- Tab Content: Music -->
+            <div id="music" class="tab-content">
+                <h2>Concert Stage</h2>
+                <p>Check out upcoming live streams, track lists, and tour dates.</p>
+            </div>
+
+            <!-- Tab Content: About -->
+            <div id="about" class="tab-content">
+                <h2>About This Site</h2>
+                <p>This is a custom interactive website built with HTML, CSS, and JavaScript.</p>
+            </div>
+        </div>
     </main>
 
     <!-- Footer section -->
