@@ -95,3 +95,59 @@ footer {
     font-size: 0.9rem;
     border-top: 1px solid #1a2332;
 }
+/* --- TAB SYSTEM STYLES --- */
+
+/* Container holding the tab buttons */
+.tab-container {
+    display: flex;
+    justify-content: space-around;
+    border-bottom: 2px solid #2a3644;
+    margin-bottom: 20px;
+}
+
+/* Individual tab button styling */
+.tab-btn {
+    background: none;
+    border: none;
+    color: #b0c4de;
+    font-size: 1rem;
+    font-weight: 700;
+    padding: 10px 15px;
+    cursor: pointer;
+    text-transform: uppercase;
+    transition: all 0.3s ease;
+    margin-top: 0;
+    border-radius: 0;
+}
+
+/* Tab button hover effect */
+.tab-btn:hover {
+    color: #00ff88;
+    background: none;
+    box-shadow: none;
+    transform: none;
+}
+
+/* Active tab button styling */
+.tab-btn.active {
+    color: #00ff88;
+    border-bottom: 3px solid #00ff88;
+}
+
+/* Hide tab content by default */
+.tab-content {
+    display: none;
+    text-align: left;
+}
+
+/* Show the active tab content */
+.tab-content.active-content {
+    display: block;
+    animation: fadeIn 0.4s ease;
+}
+
+/* Simple fade-in animation when switching tabs */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(5px); }
+    to { opacity: 1; transform: translateY(0); }
+}
