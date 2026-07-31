@@ -1,8 +1,12 @@
-/* Global styles for the whole page - Sports & Music Arena Theme */
+/* Global styles for the whole page - Professional Engineering Theme */
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    /* Deep charcoal background with a subtle athletic stadium night-game feel */
-    background-color: #12181f;
+    /* Deep precision-slate background with a subtle technical grid pattern */
+    background-color: #0b0f19;
+    background-image: 
+        linear-gradient(rgba(56, 189, 248, 0.03) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(56, 189, 248, 0.03) 1px, transparent 1px);
+    background-size: 30px 30px;
     color: #f8f9fa;
     margin: 0;
     padding: 0;
@@ -13,14 +17,14 @@ body {
     text-align: center;
 }
 
-/* Header styling - Electric Stadium / Concert Stage Vibe */
+/* Header styling - Sleek Technical Workstation Vibe */
 header {
-    /* Bold stadium green gradient mixed with a deep electric blue */
-    background: linear-gradient(135deg, #0f4c3a 0%, #1a2332 100%);
+    /* Professional dark metallic gradient with a precision engineering-blue accent */
+    background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
     color: white;
     padding: 50px 20px;
-    border-bottom: 4px solid #00ff88; /* Neon turf-green accent line */
-    box-shadow: 0 4px 20px rgba(0, 255, 136, 0.2);
+    border-bottom: 4px solid #38bdf8; /* Precision tech-blue accent line */
+    box-shadow: 0 4px 20px rgba(56, 189, 248, 0.15);
 }
 
 header h1 {
@@ -34,7 +38,7 @@ header h1 {
 header p {
     margin: 0;
     font-size: 1.2rem;
-    color: #00ff88; /* Neon highlight for the subtitle */
+    color: #38bdf8; /* Clean tech-blue highlight for the subtitle */
     font-weight: 500;
 }
 
@@ -45,13 +49,13 @@ main {
     justify-content: center;
 }
 
-/* Card container styling - Scoreboard / Stage Card */
+/* Card container styling - Blueprint / Schematic Card */
 .card {
-    background: #1e2631;
-    border: 1px solid #2a3644;
+    background: #111827;
+    border: 1px solid #1f2937;
     padding: 30px;
     border-radius: 12px;
-    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.5);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.6);
     max-width: 400px;
     width: 100%;
 }
@@ -62,13 +66,13 @@ main {
 }
 
 .card p {
-    color: #b0c4de;
+    color: #94a3b8;
 }
 
-/* Button styling - Energetic Action Button */
+/* Button styling - High-Precision Engineering Button */
 button {
-    background-color: #00ff88; /* Bright neon green for high contrast action */
-    color: #12181f;
+    background-color: #38bdf8; /* Crisp technical blue for high contrast action */
+    color: #0b0f19;
     border: none;
     padding: 14px 28px;
     font-size: 1.1rem;
@@ -80,29 +84,29 @@ button {
     text-transform: uppercase;
 }
 
-/* Button hover effect - Glowing Stadium Effect */
+/* Button hover effect - Clean Tech Glow */
 button:hover {
-    background-color: #00cc6a;
-    box-shadow: 0 0 15px rgba(0, 255, 136, 0.6);
-    transform: translateY(-2px); /* Slight lift effect when hovering */
+    background-color: #0ea5e9;
+    box-shadow: 0 0 15px rgba(56, 189, 248, 0.5);
+    transform: translateY(-2px);
 }
 
 /* Footer styling */
 footer {
-    background-color: #0b0e13;
-    color: #8899a6;
+    background-color: #05070c;
+    color: #64748b;
     padding: 20px 0;
     font-size: 0.9rem;
-    border-top: 1px solid #1a2332;
+    border-top: 1px solid #111827;
 }
+
 /* --- TAB SYSTEM STYLES --- */
 
 /* Container holding the tab buttons */
-/* Container holding the tab buttons */
 .tab-container {
     display: flex;
-    justify-content: center; /* Center the single tab */
-    border-bottom: 2px solid #2a3644;
+    justify-content: center;
+    border-bottom: 2px solid #1f2937;
     margin-bottom: 20px;
 }
 
@@ -110,7 +114,7 @@ footer {
 .tab-btn {
     background: none;
     border: none;
-    color: #b0c4de;
+    color: #94a3b8;
     font-size: 1rem;
     font-weight: 700;
     padding: 10px 15px;
@@ -123,7 +127,7 @@ footer {
 
 /* Tab button hover effect */
 .tab-btn:hover {
-    color: #00ff88;
+    color: #38bdf8;
     background: none;
     box-shadow: none;
     transform: none;
@@ -131,8 +135,8 @@ footer {
 
 /* Active tab button styling */
 .tab-btn.active {
-    color: #00ff88;
-    border-bottom: 3px solid #00ff88;
+    color: #38bdf8;
+    border-bottom: 3px solid #38bdf8;
 }
 
 /* Hide tab content by default */
