@@ -98,9 +98,10 @@ footer {
 /* --- TAB SYSTEM STYLES --- */
 
 /* Container holding the tab buttons */
+/* Container holding the tab buttons */
 .tab-container {
     display: flex;
-    justify-content: space-around;
+    justify-content: center; /* Center the single tab */
     border-bottom: 2px solid #2a3644;
     margin-bottom: 20px;
 }
