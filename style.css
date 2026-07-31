@@ -1,8 +1,9 @@
-/* Global styles for the whole page */
+/* Global styles for the whole page - Sports & Music Arena Theme */
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-color: #f0f2f5;
-    color: #333;
+    /* Deep charcoal background with a subtle athletic stadium night-game feel */
+    background-color: #12181f;
+    color: #f8f9fa;
     margin: 0;
     padding: 0;
     display: flex;
@@ -12,21 +13,29 @@ body {
     text-align: center;
 }
 
-/* Header styling */
+/* Header styling - Electric Stadium / Concert Stage Vibe */
 header {
-    background: linear-gradient(135deg, #6e8efb, #a777e3);
+    /* Bold stadium green gradient mixed with a deep electric blue */
+    background: linear-gradient(135deg, #0f4c3a 0%, #1a2332 100%);
     color: white;
-    padding: 40px 20px;
+    padding: 50px 20px;
+    border-bottom: 4px solid #00ff88; /* Neon turf-green accent line */
+    box-shadow: 0 4px 20px rgba(0, 255, 136, 0.2);
 }
 
 header h1 {
     margin: 0 0 10px 0;
-    font-size: 2.5rem;
+    font-size: 2.8rem;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    font-weight: 800;
 }
 
 header p {
     margin: 0;
     font-size: 1.2rem;
+    color: #00ff88; /* Neon highlight for the subtitle */
+    font-weight: 500;
 }
 
 /* Main content styling */
@@ -36,38 +45,53 @@ main {
     justify-content: center;
 }
 
-/* Card container styling */
+/* Card container styling - Scoreboard / Stage Card */
 .card {
-    background: white;
+    background: #1e2631;
+    border: 1px solid #2a3644;
     padding: 30px;
     border-radius: 12px;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.5);
     max-width: 400px;
     width: 100%;
 }
 
-/* Button styling */
-button {
-    background-color: #6e8efb;
-    color: white;
-    border: none;
-    padding: 12px 24px;
-    font-size: 1rem;
-    border-radius: 6px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-    margin-top: 15px;
+.card h2 {
+    color: #ffffff;
+    margin-top: 0;
 }
 
-/* Button hover effect */
+.card p {
+    color: #b0c4de;
+}
+
+/* Button styling - Energetic Action Button */
+button {
+    background-color: #00ff88; /* Bright neon green for high contrast action */
+    color: #12181f;
+    border: none;
+    padding: 14px 28px;
+    font-size: 1.1rem;
+    font-weight: 700;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin-top: 15px;
+    text-transform: uppercase;
+}
+
+/* Button hover effect - Glowing Stadium Effect */
 button:hover {
-    background-color: #5b76d9;
+    background-color: #00cc6a;
+    box-shadow: 0 0 15px rgba(0, 255, 136, 0.6);
+    transform: translateY(-2px); /* Slight lift effect when hovering */
 }
 
 /* Footer styling */
 footer {
-    background-color: #333;
-    color: white;
-    padding: 15px 0;
+    background-color: #0b0e13;
+    color: #8899a6;
+    padding: 20px 0;
     font-size: 0.9rem;
+    border-top: 1px solid #1a2332;
 }
