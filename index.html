@@ -1,42 +1,43 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nayan Rao's Portfolio</title>
-    <!-- Link to our external CSS file for styling -->
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-
-    <!-- Main header section -->
-    <header>
-        <h1>Nayan Rao</h1>
-        <p>Aspiring Engineer/Musician/Athlete/Community Volunteer/Student Leader</p>
-    </header>
-
-    <!-- Main interactive content section with tabs -->
+<!-- Main interactive content section with tabs -->
     <main>
         <div class="card">
             <!-- Tab Navigation Buttons -->
             <div class="tab-container">
+                <button class="tab-btn" onclick="openTab(event, 'academics')">Academics</button>
                 <button class="tab-btn active" onclick="openTab(event, 'about-me')">About Me</button>
+                <button class="tab-btn" onclick="openTab(event, 'summer-2026')">Summer 2026</button>
+                <button class="tab-btn" onclick="openTab(event, 'experience')">Experience</button>
+                <button class="tab-btn" onclick="openTab(event, 'hobbies')">Hobbies</button>
             </div>
 
-            <!-- Tab Content: About Me -->
+            <!-- Tab Content: Academics -->
+            <div id="academics" class="tab-content">
+                <h2>Academics</h2>
+                <p>Blank page for future academic details.</p>
+            </div>
+
+            <!-- Tab Content: About Me (Kept exactly where it is) -->
             <div id="about-me" class="tab-content active-content">
                 <h2>About Me</h2>
-                <p>Welcome! My name is Nayan Rao and I am a sophmore and Hinsdale Central High School. I designed this website to provide a more complete picture of who I am beyond just my resume. This website showcases my projects, my goals, my hobbies, my volunteer work, and overall the skills I am developing as I progress through high school.  </p>
+                <p>Welcome! I'm a passionate creator who loves sports, music, and building custom interactive applications with code, mechanics, and design.</p>
+            </div>
+
+            <!-- Tab Content: Summer 2026 -->
+            <div id="summer-2026" class="tab-content">
+                <h2>Summer 2026</h2>
+                <p>Blank page for future Summer 2026 plans and projects.</p>
+            </div>
+
+            <!-- Tab Content: Experience -->
+            <div id="experience" class="tab-content">
+                <h2>Experience</h2>
+                <p>Blank page for future professional and project experience.</p>
+            </div>
+
+            <!-- Tab Content: Hobbies -->
+            <div id="hobbies" class="tab-content">
+                <h2>Hobbies</h2>
+                <p>Blank page for future details on sports, music, etc.</p>
             </div>
         </div>
     </main>
-
-    <!-- Footer section -->
-    <footer>
-        <p>&copy; 2026 Future Engineer. All rights reserved.</p>
-    </footer>
-
-    <!-- Link to our external JavaScript file for interactivity -->
-    <script src="script.js"></script>
-</body>
-</html>
