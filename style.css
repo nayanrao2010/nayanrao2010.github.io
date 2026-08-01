@@ -48,16 +48,17 @@ main {
     display: flex;
     justify-content: center;
 }
-
-/* Card container styling - Blueprint / Schematic Card */
+/* Card container styling - Expanded into a full-page canvas */
 .card {
     background: #111827;
     border: 1px solid #1f2937;
-    padding: 30px;
+    padding: 40px;
     border-radius: 12px;
     box-shadow: 0 8px 25px rgba(0, 0, 0, 0.6);
-    max-width: 400px;
-    width: 100%;
+    /* Changed from 400px to a massive 1200px to give you room for photos/text */
+    max-width: 1200px; 
+    width: 95%; /* Ensures it shrinks nicely on smaller laptop screens or phones */
+    min-height: 65vh; /* Makes sure the box takes up at least 65% of the screen height even when empty */
 }
 
 .card h2 {
